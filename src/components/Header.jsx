@@ -12,7 +12,7 @@ export function Header() {
             <img src="/logo.png" alt="logo.png" />
           </a>
 
-          {/* Desktop Links */}
+          
           <ul className="hidden md:flex md:gap-x-6">
             <li className="hover:text-[#26ef99] transition-colors duration-300 cursor-pointer">
               <a href="#">Team</a>
@@ -25,7 +25,7 @@ export function Header() {
             </li>
           </ul>
 
-          {/* Desktop Dashboard */}
+        
           <span className="hidden md:flex gap-x-3 rounded-lg bg-[#343234] p-2 cursor-pointer 
                            transition-all duration-300 hover:text-[#26ef99] hover:shadow-lg">
             <img src="/dashboard.png" alt="profile.png" width={18} height={18} />
@@ -34,7 +34,7 @@ export function Header() {
             </a>
           </span>
 
-          {/* Mobile Toggle */}
+          {/* Mobile wala button */}
           <button
             className="md:hidden transition-transform duration-300"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -49,7 +49,7 @@ export function Header() {
           </button>
         </nav>
 
-        {/* Mobile Menu with Animation */}
+        {/* Mobile Menu shoro */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
             menuOpen
