@@ -25,7 +25,7 @@ export function Header() {
           </ul>
 
          <span className="hidden md:flex gap-x-3 rounded-lg shadow hover:text-[#26ef99] bg-[#343234] p-2 cursor-pointer"> 
-            <img src="/dashboard.png" alt="profile.png" width={18} height={18}></img>
+            <img className="w-6 h-6 image-rendering-auto" src="/user2.png" alt="profile.png"></img>
             <a href="#">
             <button className="">
               Dashboard
@@ -34,15 +34,17 @@ export function Header() {
           </span>
           <a href="#">
             <button
-              className="md:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
+              className={`md:hidden transition-transform duration-300 ${menuOpen? "rotate-180": "rotate-0"}`}
             >
               {menuOpen ? <HiX size={24} /> : <HiMenu size={24} />}
             </button>
           </a>
         </nav>
 
-        {menuOpen && (
+<div className={`md:hidden transition-all duration-500 ease-in-out ${menuOpen?"translate-y-4": "translate-y-0"}`}>
+
+        {menuOpen && (   
           <ul className="md:hidden grid gap-y-2 py-4 z-50">
             <a href="#">
               <li className="hover:text-[#26ef99] rounded-md border border-s border-gray-700 shadow-md p-2">
@@ -70,6 +72,9 @@ export function Header() {
             </span>
           </ul>
         )}
+
+</div>
+
       </div>
     </>
   );
