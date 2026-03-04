@@ -317,7 +317,7 @@ function App() {
 
       <section className="my-25">
         <div className="grid gap-y-6 justify-items-center">
-          <h1 className="font-orbitron md:text-xl text-3xl">
+          <h1 className="font-orbitron md:text-3xl text-xl">
             Order Book Integeration
           </h1>
           <InfiniteCarousel />
@@ -488,7 +488,7 @@ function App() {
         </div>
       </section>
 
-      <section className="bg-[#010503] my-10 px-30 py-8">
+      <section className="bg-[#010503] my-10 md:px-20 px-5 py-8">
 
         <div className="grid gap-y-4 justify-center text-center">
             <img src="/theteam.png" alt="team.png" className="justify-self-center"></img>
