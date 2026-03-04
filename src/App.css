@@ -124,7 +124,8 @@
 }
 
 .carousel{
-    margin: 150px auto;
+    background-color: #0a0a0a;
+    
     width: 90%;
     display: flex;
     overflow: hidden;
@@ -149,11 +150,9 @@
     display: none;
 }
 .card{
-    flex: 0 0 5em;
+    flex: 0 0 10em;
     /* height: 5em; */
     padding: 14px;
-    border-radius: .2em;
-    text-align: center;
     align-items: center;
 }
 @keyframes loop{

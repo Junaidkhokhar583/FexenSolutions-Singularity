@@ -240,7 +240,10 @@ function App() {
 
       <section className="my-20 md:px-50">
         <div className="grid gap-y-3">
-          <h1 className="text-2xl text-center"> Presale - Get in early</h1>
+          <h1 className="text-2xl text-center font-semibold">
+            {" "}
+            Presale - Get In Early
+          </h1>
           <div className="p-4">
             <div className="rounded-lg grid gap-y-4 border-[#18181a] border border-s shadow-md p-4 bg-[#0b0f12]">
               <span className="flex justify-between">
@@ -312,10 +315,244 @@ function App() {
         </div>
       </section>
 
-      <section className="my-20">
-        <InfiniteCarousel/>
+      <section className="my-25">
+        <div className="grid gap-y-6 justify-items-center">
+          <h1 className="font-orbitron md:text-xl text-3xl">
+            Order Book Integeration
+          </h1>
+          <InfiniteCarousel />
+        </div>
       </section>
 
+      <section className="md:px-25 px-6">
+        {/* outer div jo 5 grid sa bna */}
+        <div className="grid gap-y-6 justify-items-center">
+          <span>
+            <img src="/smodel.png" alt="singularity_model.png"></img>
+          </span>
+          <h1 className="md:text-4xl text-xl font-orbitron font-semibold">
+            Dual Engine Architecture
+          </h1>
+          <p>
+            Two synergistic mechanisms working together to maximize investor
+            returns and token value appreciation.
+          </p>
+          {/* 2 cards wala container    */}
+          <div className="md:flex md:gap-x-4 grid gap-y-4">
+            {/* 1 card ka andar jo 5 container */}
+            <div className="grid rounded-2xl shadow">
+              <div className="flex px-4 bg-[#121b17] justify-between items-center rounded-t-xl">
+                <div className="flex gap-x-2 items-center">
+                  <span>
+                    <img src="section4card.png" alt="uarrow.png"></img>
+                  </span>
+                  <span className="grid gap-y-1">
+                    <h3 className="md:text-2xl text-lg">The Yield Engine</h3>
+                    <p className="text-[#818182] text-sm">Stablecoin Growth</p>
+                  </span>
+                </div>
+                <span className="text-[#21bd7a] text-sm p-2 rounded-full bg-[#13261d] border border-s border-[#11432d]">
+                  ENGINE B
+                </span>
+              </div>
+
+              <p className="font-light px-4 bg-[#121b17] py-4">
+                Deposit USDT into institutional-grade yield strategies. Our
+                multi-protocol approach generates consistently monthly returns
+                through diversified DeFi positions.
+              </p>
+              <div className="grid px-4 py-4 bg-[#151415] gap-y-1">
+                <span className="flex gap-x-2 items-center">
+                  <img src="/c1.png" className="h-4 w-4"></img>
+                  <p className="text-[#817f81] text-sm">Principal Protected</p>
+                </span>
+                <span className="flex gap-x-2 items-center">
+                  <img src="/c2.png" className="h-4 w-4"></img>
+                  <p className="text-[#817f81] text-sm">Compounding returns</p>
+                </span>
+                <span className="flex gap-x-2 items-center">
+                  <img src="/c3.png" className="h-4 w-4"></img>
+                  <p className="text-[#817f81] text-sm">Auto Re-balanced</p>
+                </span>
+              </div>
+
+              <div className="px-4 bg-[#151415]">
+                <div className="bg-[#1d1c1d] rounded-lg py-3 flex">
+                  <span className="w-1/2 flex gap-x-2 justify-center items-center">
+                    <p className="text-[#9d9b9d] text-sm">Min Deposit</p>
+                    <p>$200</p>
+                  </span>
+                  <span className="justify-center w-1/2 flex gap-x-2 items-center">
+                    <p className="text-[#9d9b9d] text-sm">Avg APY</p>
+                    <p>40%</p>
+                  </span>
+                </div>
+              </div>
+
+              <div className="px-4 bg-[#151415] rounded-b-xl">
+                <button className="bg-[#1d1c1d] rounded-lg py-3 my-3 w-full justify-center text-[#26ef99]">
+                  <a href="#">Start Earning</a>
+                </button>
+              </div>
+            </div>
+
+            <div className="grid rounded-2xl shadow">
+              <div className="flex px-4 bg-[#231f10] justify-between items-center rounded-t-xl">
+                <div className="flex gap-x-2 items-center">
+                  <span>
+                    <img src="token.png" alt="token.png"></img>
+                  </span>
+                  <span className="grid gap-y-1">
+                    <h3 className="md:text-2xl text-lg">The Token Engine</h3>
+                    <p className="text-[#818182] text-sm">
+                      $PRM Value Appreciation
+                    </p>
+                  </span>
+                </div>
+                <span className="text-[#ffdb43] text-sm p-2 rounded-full bg-[#2e2813] border border-s border-[#413507]">
+                  ENGINE B
+                </span>
+              </div>
+
+              <p className="font-light px-4 bg-[#231f10] py-4">
+                Enginnered scarcity through buyback and burn mechanisms. A
+                portion of all yield is used to purchase and permanently removed
+                $PRM from circulation.
+              </p>
+              <div className="grid px-4 py-4 bg-[#151415] gap-y-1">
+                <span className="flex gap-x-2 items-center">
+                  <img src="/cc1.png" className="h-4 w-4"></img>
+                  <p className="text-[#817f81] text-sm">Deflationary Suppply</p>
+                </span>
+                <span className="flex gap-x-2 items-center">
+                  <img src="/cc2.png" className="h-4 w-4"></img>
+                  <p className="text-[#817f81] text-sm">Buyback & Burn</p>
+                </span>
+                <span className="flex gap-x-2 items-center">
+                  <img src="/cc3.png" className="h-4 w-4"></img>
+                  <p className="text-[#817f81] text-sm">Vested Rewards</p>
+                </span>
+              </div>
+
+              <div className="px-4 bg-[#151415]">
+                <div className="bg-[#1d1c1d] rounded-lg py-3 flex">
+                  <span className="w-1/2 flex gap-x-2 justify-center items-center">
+                    <p className="text-[#9d9b9d] text-sm">Total Supply</p>
+                    <p>10M $PRM</p>
+                  </span>
+                  <span className="justify-center w-1/2 flex gap-x-2 items-center">
+                    <p className="text-[#9d9b9d] text-sm">Burned</p>
+                    <p>28.05%</p>
+                  </span>
+                </div>
+              </div>
+
+              <div className="px-4 bg-[#151415] rounded-b-xl">
+                <button className="bg-[#1d1c1d] rounded-lg py-3 my-3 w-full justify-center text-[#26ef99]">
+                  <a href="#">View Tokonomics</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:flex md:gap-x-4 grid gap-y-4 items-center w-full">
+            <div className="bg-[#151415] grid justify-center gap-y-2 px-10 py-5 rounded-lg shadow md:w-1/3 text-center">
+              <p className="text-[#787678] text-sm">Yield Generated</p>
+              <p>USDT Returns</p>
+            </div>
+
+            <span className="hidden md:block">
+              <img src="/frontarrow.png" alt="arrow.png"></img>
+            </span>
+            <span className="md:hidden justify-self-center">
+              <img src="/droparrow.png" alt="arrow.png"></img>
+            </span>
+
+            <div className="bg-[#26ef99] grid justify-center gap-y-2 px-10 py-5 rounded-lg shadow md:w-1/3 text-center">
+              <p className="text-black text-sm">Singularity Protocol</p>
+              <p className="text-black">Value Accural</p>
+            </div>
+
+            <span className="hidden md:block">
+              <img src="/frontarrow.png" alt="arrow.png"></img>
+            </span>
+            <span className="md:hidden justify-self-center">
+              <img src="/droparrow.png" alt="arrow.png"></img>
+            </span>
+
+            <div className="bg-[#151415] grid justify-center gap-y-2 px-10 py-5 rounded-lg shadow md:w-1/3 text-center">
+              <p className="text-[#787678] text-sm">Token Scarcity</p>
+              <p>$PRM Burn</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#010503] my-10 px-30 py-8">
+
+        <div className="grid gap-y-4 justify-center text-center">
+            <img src="/theteam.png" alt="team.png" className="justify-self-center"></img>
+            <h1 className="md:text-3xl text-lg font-semibold font-orbitron">Built By Industry Veterans</h1>
+            <p className="text-[#82838f] text-sm text-center">A world-class team with deep expertise in traditional finance, blockchain technology, and qualitative research.</p>
+        </div>
+
+        <div className="grid md:grid-flow-col my-15 md:gap-x-4 grid-flow-row gap-y-10">
+          <div className="grid gap-y-3 w-fit justify-items-center">
+              <img src="/p1.png" alt="person.png"></img>
+              <img src="/divider.png" alt="line.png"></img>
+             <h3 className="text-lg">Alex Chen</h3>
+             <p className="text-[#26ef99] text-sm">CEO & FOUNDER</p>
+             <p className="text-sm text-[#a6a3a6] text-center">Former Goldman Sachs VP with 10+ years in quantitative trading and Defi protocol design.</p>
+             <span className="flex gap-x-2 items-center">
+              <img src="/twitter.png" alt="twitter.png"></img>
+              <img src="/linkdin.png" alt="linkdin.png"></img>
+              <img src="/github.png" alt="github.png"></img>
+             </span>
+          </div>
+
+          <div className="grid gap-y-3 w-fit justify-items-center">
+              <img src="/p2.png" alt="person.png"></img>
+              <img src="/divider.png" alt="line.png"></img>
+             <h3 className="text-lg">Sara Mitchel</h3>
+             <p className="text-[#26ef99] text-sm">Chief Technology Officer</p>
+             <p className="text-sm text-[#a6a3a6] text-center">Ex-Chainlink engineer, smart, and contract specialist with 5+ years building secure Defi primitives.</p>
+             <span className="flex gap-x-2 items-center">
+              <img src="/twitter.png" alt="twitter.png"></img>
+              <img src="/linkdin.png" alt="linkdin.png"></img>
+              <img src="/github.png" alt="github.png"></img>
+             </span>
+          </div>
+
+          <div className="grid gap-y-3 w-fit justify-items-center">
+              <img src="/p3.png" alt="person.png"></img>
+              <img src="/divider.png" alt="line.png"></img>
+             <h3 className="text-lg">Marcus Rodriguez</h3>
+             <p className="text-[#26ef99] text-sm">Head of Strategy</p>
+             <p className="text-sm text-[#a6a3a6] text-center">Former Bridgewater Associates strategist. Expert in Institutional portfolio management.</p>
+             <span className="flex gap-x-2 items-center">
+              <img src="/twitter.png" alt="twitter.png"></img>
+              <img src="/linkdin.png" alt="linkdin.png"></img>
+              <img src="/github.png" alt="github.png"></img>
+             </span>
+          </div>
+
+          <div className="grid gap-y-3 w-fit justify-items-center">
+              <img src="/p4.png" alt="person.png"></img>
+              <img src="/divider.png" alt="line.png"></img>
+             <h3 className="text-lg">Dr. Emily Zhang</h3>
+             <p className="text-[#26ef99] text-sm">Lead Researcher</p>
+             <p className="text-sm text-[#a6a3a6] text-center">PhD in Financial Engineering from MIT. Specialized in algorithmic trading and risk models.</p>
+             <span className="flex gap-x-2 items-center">
+              <img src="/twitter.png" alt="twitter.png"></img>
+              <img src="/linkdin.png" alt="linkdin.png"></img>
+              <img src="/github.png" alt="github.png"></img>
+             </span>
+          </div>
+
+
+        </div>
+
+      </section>
     </>
   );
 }
