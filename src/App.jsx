@@ -553,6 +553,90 @@ function App() {
         </div>
 
       </section>
+
+
+      <section className="md:px-25 px-6 py-6 bg-[#0a0a0a]">
+        <div className="grid gap-y-4 text-center">
+          <h1 className="text-2xl md:text-4xl font-semibold font-orbitron">Ecosystem Partners</h1>
+          <p className="md:text-sm text-lg text-[#a0a0b0]">A world-class team with deep expertise in traditional finance, blockchain technology, and quantitative research.</p>
+        </div>
+
+        <div className="grid md:grid-cols-5 grid-cols-2 mt-4 gap-x-4 gap-y-2 justify-self-center">
+          <img src="/i1.png" alt="frame.png"></img>
+          <img src="/i2.png" alt="frame.png"></img>
+          <img src="/i3.png" alt="frame.png"></img>
+          <img src="/i4.png" alt="frame.png"></img>
+          <img src="/i5.png" alt="frame.png"></img>
+          <img src="/i6.png" alt="frame.png"></img>
+          <img src="/i7.png" alt="frame.png"></img>
+          <img src="/i8.png" alt="frame.png"></img>
+          <img src="/i9.png" alt="frame.png"></img>
+          <img src="/i10.png" alt="frame.png"></img>
+          <img src="/i11.png" alt="frame.png"></img>
+          <img src="/i12.png" alt="frame.png"></img>
+          <img src="/i13.png" alt="frame.png"></img>
+          <img src="/i14.png" alt="frame.png"></img>
+        </div>
+
+
+      </section>
+
+
+      <section className="md:px-20 px-6 py-6 my-5">
+        <div className="grid gap-y-6">
+
+          <div className="grid gap-y-8">
+            <img src="/token1.png" alt="tokenomics.png"></img>
+            <h1 className="md:text-4xl text-xl">$PRM Token Economics</h1>
+            <p className="md:text-sm text-lg text-[#a6a3a6]">Designed to align long-term incentives across participants, ensuring sustainable growth and protocol resilience.<br/>Utility-driven token model powering governance, access, and value capture within the ecosystem.</p>
+          </div>
+
+
+          <div className="grid md:grid-cols-6 grid-cols-2 gap-y-4 gap-x-2">
+                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+                    <p className="text-sm text-[#9c9a9d]">Total Supply</p>
+                    <h3 className="font-semibold">10,000,000 <strong className="text-[#a0a0b0]">$PRM</strong></h3>
+                  </div>
+
+                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+                    <p className="text-sm text-[#9c9a9d]">Circulating Supply</p>
+                    <h3 className="font-semibold">7,152,608 <strong className="text-[#a0a0b0]">$PRM</strong></h3>
+                  </div>
+
+                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+                    <p className="text-sm text-[#9c9a9d]">Burned to Date</p>
+                    <h3 className="font-semibold">2,847,392 <strong className="text-[#a0a0b0]">$PRM</strong></h3>
+                  </div>
+
+                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+                    <p className="text-sm text-[#9c9a9d]">Market Cap</p>
+                    <h3 className="font-semibold">$1.02 <strong className="text-[#a0a0b0]">M</strong></h3>
+                  </div>
+
+                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+                    <p className="text-sm text-[#9c9a9d]">Current Price</p>
+                    <h3 className="font-semibold">$0.142 <strong className="text-[#a0a0b0]">USD</strong></h3>
+                  </div>
+
+                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+                    <p className="text-sm text-[#9c9a9d]">24h Volume</p>
+                    <h3 className="font-semibold">$245,678 <strong className="text-[#a0a0b0]">USD</strong></h3>
+                  </div>
+          </div>
+
+
+          <div></div>
+
+
+          <div></div>
+
+
+        </div>
+
+
+
+      </section>
+
     </>
   );
 }
