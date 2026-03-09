@@ -2,8 +2,22 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { InfiniteCarousel } from "./components/InfiniteCarousel";
 import { Progress } from "./components/ui/progress";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".imgAnimate");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    });
+    elements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <Header />
@@ -489,153 +503,419 @@ function App() {
       </section>
 
       <section className="bg-[#010503] my-10 md:px-20 px-5 py-8">
-
         <div className="grid gap-y-4 justify-center text-center">
-            <img src="/theteam.png" alt="team.png" className="justify-self-center"></img>
-            <h1 className="md:text-3xl text-lg font-semibold font-orbitron">Built By Industry Veterans</h1>
-            <p className="text-[#82838f] text-sm text-center">A world-class team with deep expertise in traditional finance, blockchain technology, and qualitative research.</p>
+          <img
+            src="/theteam.png"
+            alt="team.png"
+            className="justify-self-center"
+          ></img>
+          <h1 className="md:text-3xl text-lg font-semibold font-orbitron">
+            Built By Industry Veterans
+          </h1>
+          <p className="text-[#82838f] text-sm text-center">
+            A world-class team with deep expertise in traditional finance,
+            blockchain technology, and qualitative research.
+          </p>
         </div>
 
         <div className="grid md:grid-flow-col my-15 md:gap-x-4 grid-flow-row gap-y-10">
           <div className="grid gap-y-3 w-fit justify-items-center">
-              <img src="/p1.png" alt="person.png"></img>
-              <img src="/divider.png" alt="line.png"></img>
-             <h3 className="text-lg">Alex Chen</h3>
-             <p className="text-[#26ef99] text-sm">CEO & FOUNDER</p>
-             <p className="text-sm text-[#a6a3a6] text-center">Former Goldman Sachs VP with 10+ years in quantitative trading and Defi protocol design.</p>
-             <span className="flex gap-x-2 items-center">
+            <img src="/p1.png" alt="person.png"></img>
+            <img src="/divider.png" alt="line.png"></img>
+            <h3 className="text-lg">Alex Chen</h3>
+            <p className="text-[#26ef99] text-sm">CEO & FOUNDER</p>
+            <p className="text-sm text-[#a6a3a6] text-center">
+              Former Goldman Sachs VP with 10+ years in quantitative trading and
+              Defi protocol design.
+            </p>
+            <span className="flex gap-x-2 items-center">
               <img src="/twitter.png" alt="twitter.png"></img>
               <img src="/linkdin.png" alt="linkdin.png"></img>
               <img src="/github.png" alt="github.png"></img>
-             </span>
+            </span>
           </div>
 
           <div className="grid gap-y-3 w-fit justify-items-center">
-              <img src="/p2.png" alt="person.png"></img>
-              <img src="/divider.png" alt="line.png"></img>
-             <h3 className="text-lg">Sara Mitchel</h3>
-             <p className="text-[#26ef99] text-sm">Chief Technology Officer</p>
-             <p className="text-sm text-[#a6a3a6] text-center">Ex-Chainlink engineer, smart, and contract specialist with 5+ years building secure Defi primitives.</p>
-             <span className="flex gap-x-2 items-center">
+            <img src="/p2.png" alt="person.png"></img>
+            <img src="/divider.png" alt="line.png"></img>
+            <h3 className="text-lg">Sara Mitchel</h3>
+            <p className="text-[#26ef99] text-sm">Chief Technology Officer</p>
+            <p className="text-sm text-[#a6a3a6] text-center">
+              Ex-Chainlink engineer, smart, and contract specialist with 5+
+              years building secure Defi primitives.
+            </p>
+            <span className="flex gap-x-2 items-center">
               <img src="/twitter.png" alt="twitter.png"></img>
               <img src="/linkdin.png" alt="linkdin.png"></img>
               <img src="/github.png" alt="github.png"></img>
-             </span>
+            </span>
           </div>
 
           <div className="grid gap-y-3 w-fit justify-items-center">
-              <img src="/p3.png" alt="person.png"></img>
-              <img src="/divider.png" alt="line.png"></img>
-             <h3 className="text-lg">Marcus Rodriguez</h3>
-             <p className="text-[#26ef99] text-sm">Head of Strategy</p>
-             <p className="text-sm text-[#a6a3a6] text-center">Former Bridgewater Associates strategist. Expert in Institutional portfolio management.</p>
-             <span className="flex gap-x-2 items-center">
+            <img src="/p3.png" alt="person.png"></img>
+            <img src="/divider.png" alt="line.png"></img>
+            <h3 className="text-lg">Marcus Rodriguez</h3>
+            <p className="text-[#26ef99] text-sm">Head of Strategy</p>
+            <p className="text-sm text-[#a6a3a6] text-center">
+              Former Bridgewater Associates strategist. Expert in Institutional
+              portfolio management.
+            </p>
+            <span className="flex gap-x-2 items-center">
               <img src="/twitter.png" alt="twitter.png"></img>
               <img src="/linkdin.png" alt="linkdin.png"></img>
               <img src="/github.png" alt="github.png"></img>
-             </span>
+            </span>
           </div>
 
           <div className="grid gap-y-3 w-fit justify-items-center">
-              <img src="/p4.png" alt="person.png"></img>
-              <img src="/divider.png" alt="line.png"></img>
-             <h3 className="text-lg">Dr. Emily Zhang</h3>
-             <p className="text-[#26ef99] text-sm">Lead Researcher</p>
-             <p className="text-sm text-[#a6a3a6] text-center">PhD in Financial Engineering from MIT. Specialized in algorithmic trading and risk models.</p>
-             <span className="flex gap-x-2 items-center">
+            <img src="/p4.png" alt="person.png"></img>
+            <img src="/divider.png" alt="line.png"></img>
+            <h3 className="text-lg">Dr. Emily Zhang</h3>
+            <p className="text-[#26ef99] text-sm">Lead Researcher</p>
+            <p className="text-sm text-[#a6a3a6] text-center">
+              PhD in Financial Engineering from MIT. Specialized in algorithmic
+              trading and risk models.
+            </p>
+            <span className="flex gap-x-2 items-center">
               <img src="/twitter.png" alt="twitter.png"></img>
               <img src="/linkdin.png" alt="linkdin.png"></img>
               <img src="/github.png" alt="github.png"></img>
-             </span>
+            </span>
           </div>
-
-
         </div>
-
       </section>
-
 
       <section className="md:px-25 px-6 py-6 bg-[#0a0a0a]">
         <div className="grid gap-y-4 text-center">
-          <h1 className="text-2xl md:text-4xl font-semibold font-orbitron">Ecosystem Partners</h1>
-          <p className="md:text-sm text-lg text-[#a0a0b0]">A world-class team with deep expertise in traditional finance, blockchain technology, and quantitative research.</p>
+          <h1 className="text-2xl md:text-4xl font-semibold font-orbitron">
+            Ecosystem Partners
+          </h1>
+          <p className="md:text-sm text-lg text-[#a0a0b0]">
+            A world-class team with deep expertise in traditional finance,
+            blockchain technology, and quantitative research.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-5 grid-cols-2 mt-4 gap-x-4 gap-y-2 justify-self-center">
-          <img src="/i1.png" alt="frame.png"></img>
-          <img src="/i2.png" alt="frame.png"></img>
-          <img src="/i3.png" alt="frame.png"></img>
-          <img src="/i4.png" alt="frame.png"></img>
-          <img src="/i5.png" alt="frame.png"></img>
-          <img src="/i6.png" alt="frame.png"></img>
-          <img src="/i7.png" alt="frame.png"></img>
-          <img src="/i8.png" alt="frame.png"></img>
-          <img src="/i9.png" alt="frame.png"></img>
-          <img src="/i10.png" alt="frame.png"></img>
-          <img src="/i11.png" alt="frame.png"></img>
-          <img src="/i12.png" alt="frame.png"></img>
-          <img src="/i13.png" alt="frame.png"></img>
-          <img src="/i14.png" alt="frame.png"></img>
+          <img
+            className="imgAnimate section"
+            src="/i1.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i2.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i3.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i4.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i5.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i6.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i7.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i8.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i9.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i10.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i11.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i12.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i13.png"
+            alt="frame.png"
+          ></img>
+          <img
+            className="imgAnimate section"
+            src="/i14.png"
+            alt="frame.png"
+          ></img>
         </div>
-
-
       </section>
-
 
       <section className="md:px-20 px-6 py-6 my-5">
         <div className="grid gap-y-6">
-
           <div className="grid gap-y-8">
             <img src="/token1.png" alt="tokenomics.png"></img>
             <h1 className="md:text-4xl text-xl">$PRM Token Economics</h1>
-            <p className="md:text-sm text-lg text-[#a6a3a6]">Designed to align long-term incentives across participants, ensuring sustainable growth and protocol resilience.<br/>Utility-driven token model powering governance, access, and value capture within the ecosystem.</p>
+            <p className="md:text-sm text-lg text-[#a6a3a6]">
+              Designed to align long-term incentives across participants,
+              ensuring sustainable growth and protocol resilience.
+              <br />
+              Utility-driven token model powering governance, access, and value
+              capture within the ecosystem.
+            </p>
           </div>
-
 
           <div className="grid md:grid-cols-6 grid-cols-2 gap-y-4 gap-x-2">
-                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
-                    <p className="text-sm text-[#9c9a9d]">Total Supply</p>
-                    <h3 className="font-semibold">10,000,000 <strong className="text-[#a0a0b0]">$PRM</strong></h3>
-                  </div>
+            <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+              <p className="text-sm text-[#9c9a9d]">Total Supply</p>
+              <h3 className="font-semibold">
+                10,000,000 <strong className="text-[#a0a0b0]">$PRM</strong>
+              </h3>
+            </div>
 
-                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
-                    <p className="text-sm text-[#9c9a9d]">Circulating Supply</p>
-                    <h3 className="font-semibold">7,152,608 <strong className="text-[#a0a0b0]">$PRM</strong></h3>
-                  </div>
+            <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+              <p className="text-sm text-[#9c9a9d]">Circulating Supply</p>
+              <h3 className="font-semibold">
+                7,152,608 <strong className="text-[#a0a0b0]">$PRM</strong>
+              </h3>
+            </div>
 
-                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
-                    <p className="text-sm text-[#9c9a9d]">Burned to Date</p>
-                    <h3 className="font-semibold">2,847,392 <strong className="text-[#a0a0b0]">$PRM</strong></h3>
-                  </div>
+            <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+              <p className="text-sm text-[#9c9a9d]">Burned to Date</p>
+              <h3 className="font-semibold">
+                2,847,392 <strong className="text-[#a0a0b0]">$PRM</strong>
+              </h3>
+            </div>
 
-                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
-                    <p className="text-sm text-[#9c9a9d]">Market Cap</p>
-                    <h3 className="font-semibold">$1.02 <strong className="text-[#a0a0b0]">M</strong></h3>
-                  </div>
+            <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+              <p className="text-sm text-[#9c9a9d]">Market Cap</p>
+              <h3 className="font-semibold">
+                $1.02 <strong className="text-[#a0a0b0]">M</strong>
+              </h3>
+            </div>
 
-                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
-                    <p className="text-sm text-[#9c9a9d]">Current Price</p>
-                    <h3 className="font-semibold">$0.142 <strong className="text-[#a0a0b0]">USD</strong></h3>
-                  </div>
+            <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+              <p className="text-sm text-[#9c9a9d]">Current Price</p>
+              <h3 className="font-semibold">
+                $0.142 <strong className="text-[#a0a0b0]">USD</strong>
+              </h3>
+            </div>
 
-                  <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
-                    <p className="text-sm text-[#9c9a9d]">24h Volume</p>
-                    <h3 className="font-semibold">$245,678 <strong className="text-[#a0a0b0]">USD</strong></h3>
-                  </div>
+            <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
+              <p className="text-sm text-[#9c9a9d]">24h Volume</p>
+              <h3 className="font-semibold">
+                $245,678 <strong className="text-[#a0a0b0]">USD</strong>
+              </h3>
+            </div>
           </div>
 
+          <div className="md:flex md:gap-x-4 grid gap-y-3">
+            <div className="bg-[#0b0f12] rounded-xl shadow-lg px-5 py-10 grid gap-y-8 md:w-5/12">
+              <span className="flex justify-between">
+                <h3 className="font-semibold">TOTAL SUPPLY</h3>
+                <h3 className="text-[#26ef99] font-semibold">
+                  100,000,000 $PRM
+                </h3>
+              </span>
+              <div className="justify-items-center">
+                <img src="/chart.png"></img>
+              </div>
+            </div>
 
-          <div></div>
+            <div className="bg-[#0b0f12] rounded-xl shadow-lg px-5 py-10 md:w-7/12 grid gap-y-16">
+              <h3 className="font-semibold">VESTING SCHEDULE</h3>
+              <div className="grid gap-y-4">
+                <div className="flex justify-between h-fit">
+                  <div className="flex gap-x-3 items-center">
+                    <span className="w-10 h-5 bg-green-400 rounded"></span>
+                    <p>Presale</p>
+                  </div>
+                  <div className="flex gap-x-3 items-center">
+                    <p className="text-[#26ef99]">55%</p>
+                    <button className="border border-s border-[#042815] bg-[#042815] px-5 py-1 rounded-full text-sm text-[#26ef99]">
+                      Active
+                    </button>
+                  </div>
+                </div>
 
+                <span className="bg-[#18191a] w-full h-0.5 rounded-sm"></span>
+                <div className="flex justify-between h-fit">
+                  <div className="flex gap-x-3 items-center">
+                    <span className="w-10 h-5 bg-[#1ebf7a] rounded"></span>
+                    <p>Liquidity</p>
+                  </div>
+                  <div className="flex gap-x-3 items-center">
+                    <p className="text-[#26ef99]">12%</p>
+                    <button className="border border-s border-[#042815] bg-[#042815] px-5 py-1 rounded-full text-sm text-[#26ef99]">
+                      Active
+                    </button>
+                  </div>
+                </div>
 
-          <div></div>
+                <span className="bg-[#18191a] w-full h-0.5 rounded-sm"></span>
+                <div className="flex justify-between h-fit">
+                  <div className="flex gap-x-3 items-center">
+                    <span className="w-10 h-5 bg-[#178f5c] rounded"></span>
+                    <p>Treasury</p>
+                  </div>
+                  <div className="flex gap-x-3 items-center">
+                    <p className="text-[#26ef99]">12%</p>
+                    <button className="border border-s border-[#240044] bg-[#240044] px-4 py-1 rounded-full text-sm text-[#d900e8]">
+                      Locked
+                    </button>
+                  </div>
+                </div>
 
+                <span className="bg-[#18191a] w-full h-0.5 rounded-sm"></span>
+                <div className="flex justify-between h-fit">
+                  <div className="flex gap-x-3 items-center">
+                    <span className="w-10 h-5 bg-[#0f603d] rounded"></span>
+                    <p>Team</p>
+                  </div>
+                  <div className="flex gap-x-3 items-center">
+                    <p className="text-[#26ef99]">09%</p>
+                    <button className="border border-s border-[#042815] bg-[#042815] px-5 py-1 rounded-full text-sm text-[#26ef99]">
+                      Active
+                    </button>
+                  </div>
+                </div>
 
+                <span className="bg-[#18191a] w-full h-0.5 rounded-sm"></span>
+                <div className="flex justify-between h-fit">
+                  <div className="flex gap-x-3 items-center">
+                    <span className="w-10 h-5 bg-[#08301f] rounded"></span>
+                    <p>Marketing</p>
+                  </div>
+                  <div className="flex gap-x-3 items-center">
+                    <p className="text-[#26ef99]">12%</p>
+                    <button className="border border-s border-[#372e05] bg-[#372e05] px-4 py-1 rounded-full text-sm text-[#e6c53b]">
+                      Vesting
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:flex grid md:gap-x-3 gap-y-3">
+            <div className="bg-[#0b0f12] md:p-8 p-4 grid gap-y-4 rounded-lg shadow">
+              <img src="/o1.png"></img>
+              <h2 className="font-orbitron font-semibold">
+                Deflationary Mechanics
+              </h2>
+              <p className="text-sm text-[#939093] mt-3">
+                25% of all protocol yield is automatically used to buy back and
+                permanently burn $PRM tokens, creating a constantly decreased
+                supply.
+              </p>
+              <span className="bg-[#151415] flex justify-between p-3 rounded">
+                <p className="text-[#939093] ">Burn Rate</p>
+                <p className="font-semibold text-[#fb3748]">~45K $PRM/month</p>
+              </span>
+            </div>
+            <div className="bg-[#0b0f12] md:p-8 p-4 grid gap-y-4 rounded-lg shadow">
+              <img src="/o2.png"></img>
+              <h2 className="font-orbitron font-semibold">
+                Community Governance
+              </h2>
+              <p className="text-sm text-[#939093] mt-3">
+                $PRM holders ca participate in protocol governance, including
+                yield strategy proposals, fee adjustments, and treasury
+                allocations.
+              </p>
+              <span className="bg-[#151415] flex justify-center p-3 rounded ">
+                <button className="border border-s border-[#12161c] rounded ">
+                  <a href="#">View Proposals ➜</a>
+                </button>
+              </span>
+            </div>
+            <div className="bg-[#0b0f12] md:p-8 p-4 grid gap-y-4 rounded-lg shadow">
+              <img src="/o3.png"></img>
+              <h2 className="font-orbitron font-semibold">Value Accural</h2>
+              <p className="text-sm text-[#939093] mt-3">
+                As protocol TVL grows, buyback pressure increases. Combined with
+                deflationary mechanics, $PRM becomes more scarce and valuable
+                over time.
+              </p>
+              <span className="bg-[#151415] flex justify-between p-3 rounded">
+                <p className="text-[#939093]">Supply reduced</p>
+                <p className="font-semibold text-[#1eab60]">28.47%</p>
+              </span>
+            </div>
+          </div>
         </div>
-
-
-
       </section>
+
+     <section className="px-0 md:px-20 py-10 my-20 relative overflow-hidden">
+  <div className="max-w-7xl mx-auto relative">
+
+    {/* Background */}
+    <div className="absolute inset-0 flex justify-center md:mt-0 -mt-11 pointer-events-none">
+      <img
+        src="/bgrectangle.png"
+        className="w-full h-76 md:h-auto max-w-5xl object-fill"
+        alt=""
+      />
+    </div>
+
+    {/* Content */}
+    <div className="relative flex flex-col md:flex-row md:pl-47.5 items-center justify-between gap-10">
+
+      {/* Left Content */}
+      <div className="grid gap-y-4 md:w-1/2 text-center md:text-left">
+        <h1 className="text-black font-bold md:text-3xl">
+          White-Paper
+        </h1>
+
+        <p className="text-xs md:text-base font-medium text-black">
+          Explore the core architecture, security framwork, and governance model behind our institutional-grade DeFi protocol. Discover how we enable compliant, scalable, and secure on-chain capital deployment for modern financial institutions.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <button className="bg-white text-black rounded-lg flex items-center gap-x-2 px-4 py-3 shadow">
+            <img src="/pdf1.png" className="w-5 h-6" alt="" />
+            <a href="#" className="font-semibold">Download PDF</a>
+          </button>
+
+          <button className="bg-black text-white rounded-lg flex items-center gap-x-2 px-4 py-3">
+            <img src="/book4.png" className="w-5 h-5" alt="" />
+            <a href="#" className="font-semibold">Read White-Paper</a>
+          </button>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="md:w-1/2 hidden md:flex ">
+        <img
+          src="/bindclip.png"
+          className="w-72 sm:w-80 md:w-96 object-contain"
+          alt=""
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     </>
   );

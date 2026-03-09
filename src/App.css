@@ -159,3 +159,14 @@
     from{translate: 0;}
     to{translate: -100%;}
 }
+
+.section{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.5s ease;
+}
+
+.section.show{
+    opacity: 1;
+    transform: translateY(0);
+}
