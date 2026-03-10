@@ -1,4 +1,5 @@
 import "./App.css";
+import Layout from "./layout/Layout";
 import { BuyTokenSection } from "./components/BuyTokenSection";
 import { DualEngineSection } from "./components/DualEngineSection";
 import { EcosystemSection } from "./components/EcosystemSection";
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Layout>
       <Hero />
 
       <section className="md:my-30 my-8">
@@ -99,9 +100,8 @@ function App() {
       <Tokenomics />
       <WhitepaperSection />
 
-      <section className="md:px-20 px-6 py-6 mt-5 bg-[#0a0a0f] ">
-        <Footer />
-      </section>
+      
+      </Layout>
     </>
   );
 }

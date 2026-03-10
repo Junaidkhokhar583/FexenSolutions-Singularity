@@ -2,7 +2,8 @@ export function Footer(){
     return(
 
     <>
-    <div className="md:flex grid md:gap-x-20 gap-y-10">
+    <section className="md:px-20 px-6 py-6 mt-5 bg-[#0a0a0f] ">
+    <div className="md:flex grid md:gap-x-20 gap-y-10 ">
 
         <div className="grid gap-y-4 md:w-1/3">
             <img src="/singularity.png"></img>
@@ -58,9 +59,9 @@ export function Footer(){
             <span className="text-sm text-primary">{Date().slice(11,15)} Singularity Protocol. All rights reserved.</span>
 
 
-        <span className="text-sm text-primary md:text-right">Disclaimer: Cryptocurrency Investments carry high risk. Past performance does not gurantee future <br/> results. Please read our Risk Disclosure before Investing.</span>
+        <span className="text-sm text-primary md:text-right">Disclaimer: Cryptocurrency Investments carry high risk. Past performance does not gurantee future <br/>results. Please read our Risk Disclosure before Investing.</span>
         </div>
-
+</section>
     </>
     )
 }
