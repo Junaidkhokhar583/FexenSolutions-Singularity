@@ -5,7 +5,7 @@ return(
           <h1 className="text-xl md:text-3xl text-center font-semibold">
             Explore Our Insights
           </h1>
-          <p className="text-sm text-[#505359] text-center">
+          <p className="text-sm text-primary text-center">
             Gain a deeper understanding of our vision, strategies, and approach
             through our detailed documents.
           </p>
@@ -17,7 +17,7 @@ return(
                 </h2>
                 <img src="wpaper.png" alt="white_paper.png"></img>
               </span>
-              <p className=" text-sm text-[#505359]">
+              <p className=" text-sm text-primary">
                 Dive into our in-depth research, technical expertise, and
                 innovative methodologies that drive real bussiness value.
               </p>
@@ -33,7 +33,7 @@ return(
                 </h2>
                 <img src="deck.png" alt="investment_deck.png"></img>
               </span>
-              <p className="text-sm text-[#505359]">
+              <p className="text-sm text-primary">
                 Explore our strategic overview, growth roadmap and value
                 proposition designed for investors and stakeholders.
               </p>

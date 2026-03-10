@@ -8,7 +8,7 @@ export function ProtocolSection(){
               <p className="text-secondary text-sm">LIVE PROTOCOL METRICS</p>
             </span>
             <h1 className="text-xl md:text-4xl">Real-Time Performance</h1>
-            <p className="text-sm text-[#505359]">
+            <p className="text-sm text-primary">
               Transparent, on-chain verified data updated every block
             </p>
           </div>
@@ -17,7 +17,7 @@ export function ProtocolSection(){
             <div className="border border-s border-[#052115] rounded-lg">
               <div className="flex gap-x-2 justify-between p-4">
                 <div className="grid gap-y-3 ">
-                  <p className="text-xs text-[#505359]">Total Value Locked</p>
+                  <p className="text-xs text-primary">Total Value Locked</p>
                   <p className="text-xl">$1,250,000</p>
                   <span className="flex gap-x-1">
                     <img
@@ -27,7 +27,7 @@ export function ProtocolSection(){
                     ></img>
                     <p className="text-[#147c45]">+12.5%</p>
                   </span>
-                  <p className="text-sm text-[#505359]">
+                  <p className="text-sm text-primary">
                     Assets under management.
                   </p>
                 </div>
@@ -40,7 +40,7 @@ export function ProtocolSection(){
             <div className="border border-s border-[#052115] rounded-lg">
               <div className="flex gap-x-2 justify-between p-4">
                 <div className="grid gap-y-3 ">
-                  <p className="text-xs text-[#505359]">Current Monthly ROI</p>
+                  <p className="text-xs text-primary">Current Monthly ROI</p>
                   <p className="text-xl">8.0%</p>
                   <span className="flex gap-x-1">
                     <img
@@ -50,7 +50,7 @@ export function ProtocolSection(){
                     ></img>
                     <p className="text-[#cd2e3c]">-0.8%</p>
                   </span>
-                  <p className="text-sm text-[#505359]">
+                  <p className="text-sm text-primary">
                     Assets under management.
                   </p>
                 </div>
@@ -63,7 +63,7 @@ export function ProtocolSection(){
             <div className="border border-s border-[#052115] rounded-lg">
               <div className="flex gap-x-2 justify-between p-4">
                 <div className="grid gap-y-3 ">
-                  <p className="text-xs text-[#505359]">PRM Tokens Burned</p>
+                  <p className="text-xs text-primary">PRM Tokens Burned</p>
                   <p className="text-xl">2,847,392</p>
                   <span className="flex gap-x-1">
                     <img
@@ -73,7 +73,7 @@ export function ProtocolSection(){
                     ></img>
                     <p className="text-[#efce3f]">142,847</p>
                   </span>
-                  <p className="text-sm text-[#505359]">
+                  <p className="text-sm text-primary">
                     Assets under management.
                   </p>
                 </div>
@@ -90,15 +90,15 @@ export function ProtocolSection(){
             <div className="grid md:grid-flow-col bg-[#010503]">
               <span className="flex gap-x-3 p-4">
                 <p>9.2%</p>
-                <p className="text-[#505359]">All-Time high ROI</p>
+                <p className="text-primary">All-Time high ROI</p>
               </span>
               <span className="flex gap-x-3 p-4 md:border-l-2 border-l-0 md:border-t-0 border-t-2 border-s border-[#041a11]">
                 <p>7.1%</p>
-                <p className="text-[#505359]">Average Monthly ROI</p>
+                <p className="text-primary">Average Monthly ROI</p>
               </span>
               <span className="flex gap-x-3 p-4 md:border-l-2 border-l-0 md:border-t-0 border-t-2 border-s border-[#041a11]">
                 <p>8</p>
-                <p className="text-[#505359]">Active strategies</p>
+                <p className="text-primary">Active strategies</p>
               </span>
             </div>
           </div>

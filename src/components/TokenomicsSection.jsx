@@ -5,7 +5,7 @@ export function Tokenomics(){
           <div className="grid gap-y-8">
             <img src="/token1.png" alt="tokenomics.png"></img>
             <h1 className="md:text-4xl text-xl">$PRM Token Economics</h1>
-            <p className="md:text-sm text-lg text-[#a6a3a6]">
+            <p className="md:text-sm text-lg text-priamry">
               Designed to align long-term incentives across participants,
               ensuring sustainable growth and protocol resilience.
               <br />
@@ -18,42 +18,42 @@ export function Tokenomics(){
             <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
               <p className="text-sm text-[#9c9a9d]">Total Supply</p>
               <h3 className="font-semibold">
-                10,000,000 <strong className="text-[#a0a0b0]">$PRM</strong>
+                10,000,000 <strong className="text-primary">$PRM</strong>
               </h3>
             </div>
 
             <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
               <p className="text-sm text-[#9c9a9d]">Circulating Supply</p>
               <h3 className="font-semibold">
-                7,152,608 <strong className="text-[#a0a0b0]">$PRM</strong>
+                7,152,608 <strong className="text-primary">$PRM</strong>
               </h3>
             </div>
 
             <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
               <p className="text-sm text-[#9c9a9d]">Burned to Date</p>
               <h3 className="font-semibold">
-                2,847,392 <strong className="text-[#a0a0b0]">$PRM</strong>
+                2,847,392 <strong className="text-primary">$PRM</strong>
               </h3>
             </div>
 
             <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
               <p className="text-sm text-[#9c9a9d]">Market Cap</p>
               <h3 className="font-semibold">
-                $1.02 <strong className="text-[#a0a0b0]">M</strong>
+                $1.02 <strong className="text-primary">M</strong>
               </h3>
             </div>
 
             <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
               <p className="text-sm text-[#9c9a9d]">Current Price</p>
               <h3 className="font-semibold">
-                $0.142 <strong className="text-[#a0a0b0]">USD</strong>
+                $0.142 <strong className="text-primary">USD</strong>
               </h3>
             </div>
 
             <div className="bg-[#0b0f12] rounded-lg shadow grid gap-y-2 justify-items-center py-8">
               <p className="text-sm text-[#9c9a9d]">24h Volume</p>
               <h3 className="font-semibold">
-                $245,678 <strong className="text-[#a0a0b0]">USD</strong>
+                $245,678 <strong className="text-primary">USD</strong>
               </h3>
             </div>
           </div>
@@ -152,13 +152,13 @@ export function Tokenomics(){
               <h2 className="font-orbitron font-semibold">
                 Deflationary Mechanics
               </h2>
-              <p className="text-sm text-[#939093] mt-3">
+              <p className="text-sm text-primary mt-3">
                 25% of all protocol yield is automatically used to buy back and
                 permanently burn $PRM tokens, creating a constantly decreased
                 supply.
               </p>
               <span className="bg-[#151415] flex justify-between p-3 rounded">
-                <p className="text-[#939093] ">Burn Rate</p>
+                <p className="text-primary ">Burn Rate</p>
                 <p className="font-semibold text-[#fb3748]">~45K $PRM/month</p>
               </span>
             </div>
@@ -167,7 +167,7 @@ export function Tokenomics(){
               <h2 className="font-orbitron font-semibold">
                 Community Governance
               </h2>
-              <p className="text-sm text-[#939093] mt-3">
+              <p className="text-sm text-primary mt-3">
                 $PRM holders ca participate in protocol governance, including
                 yield strategy proposals, fee adjustments, and treasury
                 allocations.
@@ -181,13 +181,13 @@ export function Tokenomics(){
             <div className="bg-[#0b0f12] md:p-8 p-4 grid gap-y-4 rounded-lg shadow">
               <img src="/o3.png"></img>
               <h2 className="font-orbitron font-semibold">Value Accural</h2>
-              <p className="text-sm text-[#939093] mt-3">
+              <p className="text-sm text-primary mt-3">
                 As protocol TVL grows, buyback pressure increases. Combined with
                 deflationary mechanics, $PRM becomes more scarce and valuable
                 over time.
               </p>
               <span className="bg-[#151415] flex justify-between p-3 rounded">
-                <p className="text-[#939093]">Supply reduced</p>
+                <p className="text-primary">Supply reduced</p>
                 <p className="font-semibold text-secondary">28.47%</p>
               </span>
             </div>

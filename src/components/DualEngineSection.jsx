@@ -24,7 +24,7 @@ export function DualEngineSection(){
                   </span>
                   <span className="grid gap-y-1">
                     <h3 className="md:text-2xl text-lg">The Yield Engine</h3>
-                    <p className="text-[#818182] text-sm">Stablecoin Growth</p>
+                    <p className="text-primary text-sm">Stablecoin Growth</p>
                   </span>
                 </div>
                 <span className="text-secondary text-sm p-2 rounded-full bg-[#13261d] border border-s border-[#11432d]">
@@ -40,26 +40,26 @@ export function DualEngineSection(){
               <div className="grid px-4 py-4 bg-[#151415] gap-y-1">
                 <span className="flex gap-x-2 items-center">
                   <img src="/c1.png" className="h-4 w-4"></img>
-                  <p className="text-[#817f81] text-sm">Principal Protected</p>
+                  <p className="text-primary text-sm">Principal Protected</p>
                 </span>
                 <span className="flex gap-x-2 items-center">
                   <img src="/c2.png" className="h-4 w-4"></img>
-                  <p className="text-[#817f81] text-sm">Compounding returns</p>
+                  <p className="text-primary text-sm">Compounding returns</p>
                 </span>
                 <span className="flex gap-x-2 items-center">
                   <img src="/c3.png" className="h-4 w-4"></img>
-                  <p className="text-[#817f81] text-sm">Auto Re-balanced</p>
+                  <p className="text-primary text-sm">Auto Re-balanced</p>
                 </span>
               </div>
 
               <div className="px-4 bg-[#151415]">
                 <div className="bg-[#1d1c1d] rounded-lg py-3 flex">
                   <span className="w-1/2 flex gap-x-2 justify-center items-center">
-                    <p className="text-[#9d9b9d] text-sm">Min Deposit</p>
+                    <p className="text-primary text-sm">Min Deposit</p>
                     <p>$200</p>
                   </span>
                   <span className="justify-center w-1/2 flex gap-x-2 items-center">
-                    <p className="text-[#9d9b9d] text-sm">Avg APY</p>
+                    <p className="text-primary text-sm">Avg APY</p>
                     <p>40%</p>
                   </span>
                 </div>
@@ -80,7 +80,7 @@ export function DualEngineSection(){
                   </span>
                   <span className="grid gap-y-1">
                     <h3 className="md:text-2xl text-lg">The Token Engine</h3>
-                    <p className="text-[#818182] text-sm">
+                    <p className="text-primary text-sm">
                       $PRM Value Appreciation
                     </p>
                   </span>
@@ -98,26 +98,26 @@ export function DualEngineSection(){
               <div className="grid px-4 py-4 bg-[#151415] gap-y-1">
                 <span className="flex gap-x-2 items-center">
                   <img src="/cc1.png" className="h-4 w-4"></img>
-                  <p className="text-[#817f81] text-sm">Deflationary Suppply</p>
+                  <p className="text-primary text-sm">Deflationary Suppply</p>
                 </span>
                 <span className="flex gap-x-2 items-center">
                   <img src="/cc2.png" className="h-4 w-4"></img>
-                  <p className="text-[#817f81] text-sm">Buyback & Burn</p>
+                  <p className="text-primary text-sm">Buyback & Burn</p>
                 </span>
                 <span className="flex gap-x-2 items-center">
                   <img src="/cc3.png" className="h-4 w-4"></img>
-                  <p className="text-[#817f81] text-sm">Vested Rewards</p>
+                  <p className="text-primary text-sm">Vested Rewards</p>
                 </span>
               </div>
 
               <div className="px-4 bg-[#151415]">
                 <div className="bg-[#1d1c1d] rounded-lg py-3 flex">
                   <span className="w-1/2 flex gap-x-2 justify-center items-center">
-                    <p className="text-[#9d9b9d] text-sm">Total Supply</p>
+                    <p className="text-primary text-sm">Total Supply</p>
                     <p>10M $PRM</p>
                   </span>
                   <span className="justify-center w-1/2 flex gap-x-2 items-center">
-                    <p className="text-[#9d9b9d] text-sm">Burned</p>
+                    <p className="text-primary text-sm">Burned</p>
                     <p>28.05%</p>
                   </span>
                 </div>
@@ -133,7 +133,7 @@ export function DualEngineSection(){
 
           <div className="md:flex md:gap-x-4 grid gap-y-4 items-center w-full">
             <div className="bg-[#151415] grid justify-center gap-y-2 px-10 py-5 rounded-lg shadow md:w-1/3 text-center">
-              <p className="text-[#787678] text-sm">Yield Generated</p>
+              <p className="text-primary text-sm">Yield Generated</p>
               <p>USDT Returns</p>
             </div>
 
@@ -157,7 +157,7 @@ export function DualEngineSection(){
             </span>
 
             <div className="bg-[#151415] grid justify-center gap-y-2 px-10 py-5 rounded-lg shadow md:w-1/3 text-center">
-              <p className="text-[#787678] text-sm">Token Scarcity</p>
+              <p className="text-primary text-sm">Token Scarcity</p>
               <p>$PRM Burn</p>
             </div>
           </div>

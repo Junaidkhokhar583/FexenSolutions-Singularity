@@ -14,7 +14,7 @@ export function Hero(){
                 Institutional Access
               </strong>
             </h1>
-            <p className="text-sm text-[#9696a5]">
+            <p className="text-sm text-primary">
               Experience historically modeled high-yielding returns, distributed
               weekly through our Institutional grade infrastructure. Your
               personal hedge fun, fully on-chain.

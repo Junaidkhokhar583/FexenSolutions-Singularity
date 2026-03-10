@@ -21,7 +21,7 @@ export function EcosystemSection(){
           <h1 className="text-2xl md:text-4xl font-semibold font-orbitron">
             Ecosystem Partners
           </h1>
-          <p className="md:text-sm text-lg text-[#a0a0b0]">
+          <p className="md:text-sm text-lg text-primary">
             A world-class team with deep expertise in traditional finance,
             blockchain technology, and quantitative research.
           </p>
