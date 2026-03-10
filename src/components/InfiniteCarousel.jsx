@@ -1,6 +1,5 @@
 import "../App.css";
 
-
 export function InfiniteCarousel(){
 return(
 
