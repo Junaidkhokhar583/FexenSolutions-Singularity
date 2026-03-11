@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <Layout>
+
       <Hero />
 
       <section className="md:my-30 my-8">
@@ -101,7 +101,7 @@ function App() {
       <WhitepaperSection />
 
       
-      </Layout>
+
     </>
   );
 }
