@@ -30,10 +30,9 @@ function App() {
 
   return (
     <>
-
       <Hero />
 
-      <section className="md:my-30 my-8">
+      <section className="md:mb-40 mb-20">
         <img src="/bgbox.png"></img>
       </section>
 
@@ -41,7 +40,7 @@ function App() {
       <InsightsSection />
       <BuyTokenSection />
 
-      <section className="my-25">
+      <section className="my-25 md:my-50">
         <div className="grid gap-y-6 justify-items-center">
           <h1 className="font-orbitron md:text-3xl text-xl">
             Order Book Integeration
@@ -52,7 +51,7 @@ function App() {
 
       <DualEngineSection />
 
-      <section className="bg-[#010503] my-10 md:px-20 px-5 py-8">
+      <section className="bg-[#010503] my-10 md:px-20 px-5 py-45">
         <div className="grid gap-y-4 justify-center text-center">
           <img
             src="/theteam.png"
@@ -73,7 +72,7 @@ function App() {
             img="/p1.png"
             name="Alex Chen"
             title="CEO & FOUNDER"
-            description="Former Goldman Sachs VP with 10+ years in quantitative trading and Defi protocol design."
+            description="Former Goldman Sachs VP with 10+ years in quantitative trading and pure Defi protocol design."
           />
           <Card
             img="/p2.png"
@@ -85,13 +84,13 @@ function App() {
             img="/p3.png"
             name="Marcus Rodriguez"
             title="Head of Strategy"
-            description="Former Bridgewater Associates strategist. Expert in Institutional portfolio management."
+            description="Former Bridgewater Associates strategist. Expert in Institutional portfolio management and technologies."
           />
           <Card
             img="/p4.png"
             name="Dr. Emily Zhang"
             title="Lead Researcher"
-            description="PhD in Financial Engineering from MIT. Specialized in algorithmic trading and risk models."
+            description="PhD in Financial Engineering from MIT with highest awards. Specialized in algorithmic trading and risk models."
           />
         </div>
       </section>
@@ -99,9 +98,6 @@ function App() {
       <EcosystemSection />
       <Tokenomics />
       <WhitepaperSection />
-
-      
-
     </>
   );
 }
